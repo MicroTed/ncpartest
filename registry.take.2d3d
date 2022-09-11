@@ -1,0 +1,612 @@
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+          25                                                                                                                                               
+          86                                                                                                                                               
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ NX                    int   -1     -1.00000                                                                                                               
+ NY                    int   -1     -1.00000                                                                                                               
+ NZ                    int   -1     -1.00000                                                                                                               
+ NG                    int   -1     -1.00000                                                                                                               
+ NXEND                 int   -1     -1.00000                                                                                                               
+ NYEND                 int   -1     -1.00000                                                                                                               
+ NZEND                 int   -1     -1.00000                                                                                                               
+ PREFIX_NAME           str   -1     -1.00000                                                                                                               
+ MEMBER                int   -1     -1.00000                                                                                                               
+ SIZE_OF_ENSEMBLE      int   -1     -1.00000                                                                                                               
+ CREATION_DATE         str   -1     -1.00000                                                                                                               
+ CREATION_TIME         str   -1     -1.00000                                                                                                               
+ MEMBER_NAME           str   -1     -1.00000                                                                                                               
+ OUTPUT_FILE_NAME      str   -1     -1.00000                                                                                                               
+ COARDS                str   -1     -1.00000                                                                                                               
+ Conventions           str   -1     -1.00000                                                                                                               
+ MICROPHYS             str   -1     -1.00000                                                                                                               
+ V5DFIELDS             str   -1     -1.00000                                                                                                               
+ YEAR                  int   -1     -1.00000                                                                                                               
+ MONTH                 int   -1     -1.00000                                                                                                               
+ DAY                   int   -1     -1.00000                                                                                                               
+ HOUR                  int   -1     -1.00000                                                                                                               
+ MINUTE                int   -1     -1.00000                                                                                                               
+ SECOND                int   -1     -1.00000                                                                                                               
+ TILE_INDEX            int   -1     -1.00000                                                                                                               
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ NX          0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF POINTS ON U-GRID IN X                                                    
+ NY          0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF POINTS ON V-GRID IN Y                                                    
+ NZ          0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF POINTS ON W-GRID IN Z                                                    
+ NG          0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF COMPUTATIONAL BUFFER ZONES                                               
+ NXEND       0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF POINTS ON FULL U-GRID IN X                                               
+ NYEND       0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF POINTS ON FULL V-GRID IN Y                                               
+ NZEND       0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF POINTS ON FULL W-GRID IN Z                                               
+ NSCALAR     0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF SCALAR FIELDS                                                            
+ NSMALL      0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF SMALL TIME STEPS                                                         
+ BCX         0  icnst   0   0   0   0  -1  -1  -1   0  count            BOUNDARY CONDITION FOR X                                                           
+ BCY         0  icnst   0   0   0   0  -1  -1  -1   0  count            BOUNDARY CONDITION FOR Y                                                           
+ BCZ         0  icnst   0   0   0   0  -1  -1  -1   0  count            BOUNDARY CONDITION FOR Z                                                           
+ N_INNER     0  icnst   0   0   0   0  -1  -1  -1   0  count            # POINTS FOR HOR STRETCHED GRID                                                    
+ N_BNDLYR    0  icnst   0   0   0   0  -1  -1  -1   0  count            # BLR POINTS GRID WHERE DZBOT CONSTANT                                             
+ HOLE_FILL   0  icnst   0   0   0   0  -1  -1  -1   0  count            HOLE FILLING PARAMETER FOR MICROPHYSICS                                            
+ AUTOCONV    0  icnst   0   0   0   0  -1  -1  -1   0  count            AUTOCONVERSION FLAG                                                                
+ TIME        0  icnst   1   0   0   0  -1  -1  -1   0  seconds          LOCAL MODEL TIME IN SECONDS FROM START                                             
+ TRESTART    0  icnst   0   0   0   0  -1  -1  -1   0  seconds          DT IN SECONDS BETWEEN RESTART DUMPS                                                
+ THISTORY    0  icnst   1   0   0   0  -1  -1  -1   0  seconds          DT IN SECONDS BETWEEN HISTORY DUMPS                                                
+ TVIS5D      0  icnst   1   0   0   0  -1  -1  -1   0  seconds          DT IN SECONDS BETWEEN VIS5D DUMPS                                                  
+ TPRINT      0  icnst   0   0   0   0  -1  -1  -1   0  seconds          DT IN SECONDS BETWEEN PRINT OUTPUT                                                 
+ TSTAT       0  icnst   0   0   0   0  -1  -1  -1   0  seconds          DT IN SECONDS BETWEEN STAT OUTPUT                                                  
+ TIME_STOP   0  icnst   0   0   0   0  -1  -1  -1   0  seconds          LOCAL TIME IN SECS MODEL INTEGRATED TO                                             
+ IPCONC      0  icnst   0   0   0   0  -1  -1  -1   0  count            CONCENTRATION  FLAG                                                                
+ INUCOPT     0  icnst   0   0   0   0  -1  -1  -1   0  count            FLAG FOR ACTIVATED NUCLEI PREDICTION                                               
+ IPELEC      0  icnst   0   0   0   0  -1  -1  -1   0  count            ELECTRIFICATION FLAG                                                               
+ LGTSEED     0  icnst   1   0   0   0  -1  -1  -1   0  seconds          Random number seed for lightning                                                   
+ RAIN_RAT    2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2 s-1       SFC PRECIP RATE FOR LIQUID                                                         
+ HAIL_RAT    2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2 s-1       SFC PRECIP RATE FOR ICE                                                            
+ RAIN_ACC    2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2           ACCUMULATED LIQUID PRECIP                                                          
+ HAIL_ACC    2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2           ACCUMULATED FROZEN PRECIP                                                          
+ HAIL_ACCH   2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2           ACCUMULATED HAIL                                                                   
+ HAIL_ACCHF  2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2           ACCUMULATED HAIL FROM FD                                                           
+ HAIL_NACCF  2  xy2d    1   0   0   0   1  -1  -1   0  m-2              ACCUMULATED HAIL NUMBER from FD                                                    
+ HAIL_NACC   2  xy2d    1   0   0   0   1  -1  -1   0  m-2              ACCUMULATED HAIL NUMBER                                                            
+ HAIL_DIAM   2  xy2d    1   0   0   0   1  -1  -1   0  mm               MEAN MASS HAIL Diameter (mm)                                                       
+ GR_DIAM     2  xy2d    1   0   0   0   1  -1  -1   0  mm               MEAN MASS Graupel Diameter (mm)                                                    
+ GR_NACC     2  xy2d    1   0   0   0   1  -1  -1   0  m-2              ACCUMULATED Graupel NUMBER                                                         
+ GR_ACC      2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2           ACCUMULATED Graupel Mass                                                           
+ FD_DIAM     2  xy2d    1   0   0   0   1  -1  -1   0  mm               MEAN MASS FD Diameter (mm)                                                         
+ FD_NACC     2  xy2d    1   0   0   0   1  -1  -1   0  m-2              ACCUMULATED FD NUMBER                                                              
+ FD_ACC      2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2           ACCUMULATED FROZEN DROPS                                                           
+ COMP_DBZ    2  xy2d    1   0   0   0   1  -1  -1   0  dBZ              COMPOSITE REFLECTIVITY                                                             
+ WZ_SFC_MAX  2  xy2d    1   0   0   0   1  -1  -1   0  m-2 s-2          MAX SURFACE VORTICITY OVER HISTORY TIME                                            
+ WZ_SFC_MIN  2  xy2d    1   0   0   0   1  -1  -1   0  m-2 s-2          MIN SURFACE VORTICITY OVER HISTORY TIME                                            
+ UV_SFC_MAX  2  xy2d    1   0   0   0   1  -1  -1   0  m-2 s-1          MAX SURFACE WIND SPEED OVER HISTORY TIME                                           
+ FLSHSRC     2  xy2d    1   0   0   0   1  -1  -1   0  count            FLASH SOURCES IN A COLUMN                                                          
+ FLSHFED     2  xy2d    1   0   0   0   1  -1  -1   0  count            FLASH EXTENT DENSITY (Column)                                                      
+ FLSHFOD     2  xy2d    1   0   0   0   1  -1  -1   0  count            FLASH ORIGIN RATE IN A COLUMN                                                      
+ FLSHFODIC   2  xy2d    1   0   0   0   1  -1  -1   0  count            IC FLASH ORIGIN RATE IN A COLUMN                                                   
+ FLSHFODCGN  2  xy2d    1   0   0   0   1  -1  -1   0  count            CGN FLASH ORIGIN RATE IN A COLUMN                                                  
+ FLSHFODCGP  2  xy2d    1   0   0   0   1  -1  -1   0  count            CGP FLASH ORIGIN RATE IN A COLUMN                                                  
+ FLSHFEDIC   2  xy2d    1   0   0   0   1  -1  -1   0  count            IC FLASH FED                                                                       
+ FLSHFEDICP  2  xy2d    1   0   0   0   1  -1  -1   0  count            IC FLASH FED POS CHAN                                                              
+ FLSHFEDICN  2  xy2d    1   0   0   0   1  -1  -1   0  count            IC FLASH FED NEG CHAN                                                              
+ FLSHFEDCGN  2  xy2d    1   0   0   0   1  -1  -1   0  count            CGN FLASH FED                                                                      
+ FLSHFEDCGP  2  xy2d    1   0   0   0   1  -1  -1   0  count            CGP FLASH FED                                                                      
+ PNIC_2D     2  xy2d    1   0   0   0   1  -1  -1   0  C m-2            POS NONINDUCTIVE CHARGING IN A COLUMN                                              
+ NNIC_2D     2  xy2d    1   0   0   0   1  -1  -1   0  C m-2            NEG NONINDUCTIVE CHARGING IN A COLUMN                                              
+ DBZ         3  xyz3d   1   0   0   0   0   1   0   0  dBZ              RADAR REFLECTIVITY                                                                 
+ WZ          3  xyz3d   1   0   0   0   0   1   0   0  sec-1            VERTICAL VORTICITY                                                                 
+ P           3  xyz3d   1   0   0   0   0   1   0   0  Pa               AIR PRESSURE                                                                       
+ T           3  xyz3d   1   0   0   0   1   1   0   0  kelvin           AIR TEMPERATURE                                                                    
+ THETA_V     3  xyz3d   1   0   0   0   1   1   0   0  kelvin           Virtual Pot. Temp.                                                                 
+ HWDN        3  xyz3d   1   0   0   0   0   1   0   0  kg m-3           Graupel Density                                                                    
+ FWDN        3  xyz3d   1   0   0   0   0   1   0   0  kg m-3           Frozen Drop Density                                                                
+ CCWTAK      3  xyz3d   1   0   0   0   0   1   0   0  cm-3             DROPLET NUMBER                                                                     
+ CCITAK      3  xyz3d   1   0   0   0   0   1   0   0  cm-3             Ice Crystal NUMBER                                                                 
+ DBZR        3  xyz3d   1   0   0   0   0   1   0   0  dBZ              RAIN RADAR REFLECTIVITY                                                            
+ DBZH        3  xyz3d   1   0   0   0   0   1   0   0  dBZ              GRAUPEL RADAR REFLECTIVITY                                                         
+ DBZHL       3  xyz3d   1   0   0   0   0   1   0   0  dBZ              HAIL RADAR REFLECTIVITY                                                            
+ DBZI        3  xyz3d   1   0   0   0   0   1   0   0  dBZ              ICE RADAR REFLECTIVITY                                                             
+ EX          3  xyz3d   1   1   0   0   0   0   0   0  volt meters-1    ELECTRIC FIELD X-COMPONENT                                                         
+ EY          3  xyz3d   1   0   1   0   0   0   0   0  volt meters-1    ELECTRIC FIELD Y-COMPONENT                                                         
+ EZ          3  xyz3d   1   0   0   1   0   0   0   0  volt meters-1    ELECTRIC FIELD Z-COMPONENT                                                         
+ EMAG        3  xyz3d   1   0   0   0   0   0   0   0  volt meters-1    ELECTRIC FIELD MAGNITUDE                                                           
+ POTENTIAL   3  xyz3d   1   0   0   0   0   0   0   0  volt             ELECTRIC POTENTIAL                                                                 
+ FLSHN       3  xyz3d   1   0   0   0   1   0   0   0  count            NEGATIVE CHANNEL SEGMENTS                                                          
+ FLSHP       3  xyz3d   1   0   0   0   1   0   0   0  count            POSITIVE CHANNEL SEGMENTS                                                          
+ FLSHI       3  xyz3d   1   0   0   0   1   0   0   0  count            FLASH INITIATION POINTS                                                            
+ RSCGHIS     3  xyz3d   1   0   0   0   1   0   0   0  C m-3 s-1        NONINDUCTIVE GRAUPEL CHARGING RATE                                                 
+ RSCGHW      3  xyz3d   1   0   0   0   1   0   0   0  C m-3 s-1        INDUCTIVE GRAUPEL CHARGING RATE                                                    
+ SCNET       3  xyz3d   1   0   0   0   1   0   0   0  C m-3            NET CHARGE DENSITY                                                                 
+ EMAGSTAG    3  xyz3d   1   0   0   0   0   0   0   0  volt meters-1    MAX ELECTRIC FIELD MAGNITUDE                                                       
+ U           3  xyz3d   1   1   0   0   0   1   0   0  meters sec-1     X-WIND COMPONENT                                                                   
+ V           3  xyz3d   1   0   1   0   0   1   0   0  meters sec-1     Y-WIND COMPONENT                                                                   
+ W           3  xyz3d   1   0   0   1   0   1   0   0  meters sec-1     Z-WIND COMPONENT                                                                   
+ PI          3  xyz3d   1   0   0   0   0   1   0   0  count            PERT. EXNER                                                                        
+ KM          3  xyz3d   1   0   0   0   1   1   0   0  meters2 sec-1    MIXING COEFFICIENT                                                                 
+ TH          3  xyz3d   1   0   0   0   1   1   0   1  kelvin           POTENTIAL TEMPERATURE                                                              
+ QV          3  xyz3d   1   0   0   0   1   1   0   2  kg kg-1          VAPOR MIXING RATIO                                                                 
+ QC          3  xyz3d   1   0   0   0   1   1   0   3  kg kg-1          CLOUD MIXING RATIO                                                                 
+ QR          3  xyz3d   1   0   0   0   1   1   0   3  kg kg-1          RAIN MIXING RATIO                                                                  
+ QI          3  xyz3d   1   0   0   0   1   1   0   3  kg kg-1          ICE MIXING RATIO                                                                   
+ QS          3  xyz3d   1   0   0   0   1   1   0   3  kg kg-1          SNOW MIXING RATIO                                                                  
+ QH          3  xyz3d   1   0   0   0   1   1   0   3  kg kg-1          GRAUPEL MIXING RATIO                                                               
+ QHL         3  xyz3d   1   0   0   0   1   1   0   3  kg kg-1          HAIL MIXING RATIO                                                                  
+ CRW         3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 01                                                                    
+ CRW02       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 02                                                                    
+ CRW03       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 03                                                                    
+ CRW04       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 04                                                                    
+ CRW05       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 05                                                                    
+ CRW06       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 06                                                                    
+ CRW07       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 07                                                                    
+ CRW08       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 08                                                                    
+ CRW09       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 09                                                                    
+ CRW10       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 10                                                                    
+ CRW11       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 11                                                                    
+ CRW12       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 12                                                                    
+ CRW13       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 13                                                                    
+ CRW14       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 14                                                                    
+ CRW15       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 15                                                                    
+ CRW16       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 16                                                                    
+ CRW17       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 17                                                                    
+ CRW18       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 18                                                                    
+ CRW19       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 19                                                                    
+ CRW20       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 20                                                                    
+ CRW21       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 21                                                                    
+ CRW22       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 22                                                                    
+ CRW23       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 23                                                                    
+ CRW24       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 24                                                                    
+ CRW25       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 25                                                                    
+ CRW26       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 26                                                                    
+ CRW27       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 27                                                                    
+ CRW28       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 28                                                                    
+ CRW29       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 29                                                                    
+ CRW30       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 30                                                                    
+ CRW31       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 31                                                                    
+ CRW32       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 32                                                                    
+ CRW33       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 33                                                                    
+ CRW34       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK RAIN BIN 34                                                                    
+ CCI         3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_01                                                               
+ CCI1_02     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_02                                                               
+ CCI1_03     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_03                                                               
+ CCI1_04     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_04                                                               
+ CCI1_05     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_05                                                               
+ CCI1_06     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_06                                                               
+ CCI1_07     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_07                                                               
+ CCI1_08     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_08                                                               
+ CCI1_09     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_09                                                               
+ CCI1_10     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_10                                                               
+ CCI1_11     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_11                                                               
+ CCI1_12     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_12                                                               
+ CCI1_13     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_13                                                               
+ CCI1_14     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_14                                                               
+ CCI1_15     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_15                                                               
+ CCI1_16     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_16                                                               
+ CCI1_17     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_17                                                               
+ CCI1_18     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_18                                                               
+ CCI1_19     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_19                                                               
+ CCI1_20     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_20                                                               
+ CCI1_21     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 1_21                                                               
+ CCI2_01     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_01                                                               
+ CCI2_02     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_02                                                               
+ CCI2_03     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_03                                                               
+ CCI2_04     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_04                                                               
+ CCI2_05     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_05                                                               
+ CCI2_06     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_06                                                               
+ CCI2_07     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_07                                                               
+ CCI2_08     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_08                                                               
+ CCI2_09     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_09                                                               
+ CCI2_10     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_10                                                               
+ CCI2_11     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_11                                                               
+ CCI2_12     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_12                                                               
+ CCI2_13     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_13                                                               
+ CCI2_14     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_14                                                               
+ CCI2_15     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_15                                                               
+ CCI2_16     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_16                                                               
+ CCI2_17     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_17                                                               
+ CCI2_18     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_18                                                               
+ CCI2_19     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_19                                                               
+ CCI2_20     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_20                                                               
+ CCI2_21     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 2_21                                                               
+ CCI3_01     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_01                                                               
+ CCI3_02     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_02                                                               
+ CCI3_03     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_03                                                               
+ CCI3_04     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_04                                                               
+ CCI3_05     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_05                                                               
+ CCI3_06     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_06                                                               
+ CCI3_07     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_07                                                               
+ CCI3_08     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_08                                                               
+ CCI3_09     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_09                                                               
+ CCI3_10     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_10                                                               
+ CCI3_11     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_11                                                               
+ CCI3_12     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_12                                                               
+ CCI3_13     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_13                                                               
+ CCI3_14     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_14                                                               
+ CCI3_15     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_15                                                               
+ CCI3_16     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_16                                                               
+ CCI3_17     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_17                                                               
+ CCI3_18     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_18                                                               
+ CCI3_19     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_19                                                               
+ CCI3_20     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_20                                                               
+ CCI3_21     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 3_21                                                               
+ CCI4_01     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_01                                                               
+ CCI4_02     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_02                                                               
+ CCI4_03     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_03                                                               
+ CCI4_04     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_04                                                               
+ CCI4_05     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_05                                                               
+ CCI4_06     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_06                                                               
+ CCI4_07     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_07                                                               
+ CCI4_08     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_08                                                               
+ CCI4_09     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_09                                                               
+ CCI4_10     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_10                                                               
+ CCI4_11     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_11                                                               
+ CCI4_12     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_12                                                               
+ CCI4_13     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_13                                                               
+ CCI4_14     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_14                                                               
+ CCI4_15     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_15                                                               
+ CCI4_16     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_16                                                               
+ CCI4_17     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_17                                                               
+ CCI4_18     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_18                                                               
+ CCI4_19     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_19                                                               
+ CCI4_20     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_20                                                               
+ CCI4_21     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 4_21                                                               
+ CCI5_01     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_01                                                               
+ CCI5_02     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_02                                                               
+ CCI5_03     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_03                                                               
+ CCI5_04     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_04                                                               
+ CCI5_05     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_05                                                               
+ CCI5_06     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_06                                                               
+ CCI5_07     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_07                                                               
+ CCI5_08     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_08                                                               
+ CCI5_09     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_09                                                               
+ CCI5_10     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_10                                                               
+ CCI5_11     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_11                                                               
+ CCI5_12     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_12                                                               
+ CCI5_13     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_13                                                               
+ CCI5_14     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_14                                                               
+ CCI5_15     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_15                                                               
+ CCI5_16     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_16                                                               
+ CCI5_17     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_17                                                               
+ CCI5_18     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_18                                                               
+ CCI5_19     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_19                                                               
+ CCI5_20     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_20                                                               
+ CCI5_21     3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK CRYSTAL BIN 5_21                                                               
+ CHW         3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 01                                                                 
+ CHW02       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 02                                                                 
+ CHW03       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 03                                                                 
+ CHW04       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 04                                                                 
+ CHW05       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 05                                                                 
+ CHW06       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 06                                                                 
+ CHW07       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 07                                                                 
+ CHW08       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 08                                                                 
+ CHW09       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 09                                                                 
+ CHW10       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 10                                                                 
+ CHW11       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 11                                                                 
+ CHW12       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 12                                                                 
+ CHW13       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 13                                                                 
+ CHW14       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 14                                                                 
+ CHW15       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 15                                                                 
+ CHW16       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 16                                                                 
+ CHW17       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 17                                                                 
+ CHW18       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 18                                                                 
+ CHW19       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 19                                                                 
+ CHW20       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 20                                                                 
+ CHW21       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 21                                                                 
+ CHW22       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 22                                                                 
+ CHW23       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 23                                                                 
+ CHW24       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 24                                                                 
+ CHW25       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 25                                                                 
+ CHW26       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 26                                                                 
+ CHW27       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 27                                                                 
+ CHW28       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 28                                                                 
+ CHW29       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 29                                                                 
+ CHW30       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 30                                                                 
+ CHW31       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 31                                                                 
+ CHW32       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 32                                                                 
+ CHW33       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 33                                                                 
+ CHW34       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 34                                                                 
+ CHW35       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 35                                                                 
+ CHW36       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 36                                                                 
+ CHW37       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 37                                                                 
+ CHW38       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 38                                                                 
+ CHW39       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 39                                                                 
+ CHW40       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 40                                                                 
+ CHW41       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 41                                                                 
+ CHW42       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 42                                                                 
+ CHW43       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 43                                                                 
+ CHW44       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 44                                                                 
+ CHW45       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK GRAUPEL BIN 45                                                                 
+ CHL         3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 01                                                                    
+ CHL02       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 02                                                                    
+ CHL03       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 03                                                                    
+ CHL04       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 04                                                                    
+ CHL05       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 05                                                                    
+ CHL06       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 06                                                                    
+ CHL07       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 07                                                                    
+ CHL08       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 08                                                                    
+ CHL09       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 09                                                                    
+ CHL10       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 10                                                                    
+ CHL11       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 11                                                                    
+ CHL12       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 12                                                                    
+ CHL13       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 13                                                                    
+ CHL14       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 14                                                                    
+ CHL15       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 15                                                                    
+ CHL16       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 16                                                                    
+ CHL17       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 17                                                                    
+ CHL18       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 18                                                                    
+ CHL19       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 19                                                                    
+ CHL20       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 20                                                                    
+ CHL21       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 21                                                                    
+ CHL22       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 22                                                                    
+ CHL23       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 23                                                                    
+ CHL24       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 24                                                                    
+ CHL25       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 25                                                                    
+ CHL26       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 26                                                                    
+ CHL27       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 27                                                                    
+ CHL28       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 28                                                                    
+ CHL29       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 29                                                                    
+ CHL30       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 30                                                                    
+ CHL31       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 31                                                                    
+ CHL32       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 32                                                                    
+ CHL33       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 33                                                                    
+ CHL34       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 34                                                                    
+ CHL35       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 35                                                                    
+ CHL36       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 36                                                                    
+ CHL37       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 37                                                                    
+ CHL38       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 38                                                                    
+ CHL39       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 39                                                                    
+ CHL40       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 40                                                                    
+ CHL41       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 41                                                                    
+ CHL42       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 42                                                                    
+ CHL43       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 43                                                                    
+ CHL44       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 44                                                                    
+ CHL45       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             TAK HAIL BIN 45                                                                    
+ SCRW        3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE01                                                              
+ SCRW02      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE02                                                              
+ SCRW03      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE03                                                              
+ SCRW04      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE04                                                              
+ SCRW05      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE05                                                              
+ SCRW06      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE06                                                              
+ SCRW07      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE07                                                              
+ SCRW08      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE08                                                              
+ SCRW09      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE09                                                              
+ SCRW10      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE10                                                              
+ SCRW11      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE11                                                              
+ SCRW12      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE12                                                              
+ SCRW13      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE13                                                              
+ SCRW14      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE14                                                              
+ SCRW15      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE15                                                              
+ SCRW16      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE16                                                              
+ SCRW17      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE17                                                              
+ SCRW18      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE18                                                              
+ SCRW19      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE19                                                              
+ SCRW20      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE20                                                              
+ SCRW21      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE21                                                              
+ SCRW22      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE22                                                              
+ SCRW23      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE23                                                              
+ SCRW24      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE24                                                              
+ SCRW25      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE25                                                              
+ SCRW26      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE26                                                              
+ SCRW27      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE27                                                              
+ SCRW28      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE28                                                              
+ SCRW29      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE29                                                              
+ SCRW30      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE30                                                              
+ SCRW31      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE31                                                              
+ SCRW32      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE32                                                              
+ SCRW33      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE33                                                              
+ SCRW34      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK RAIN BIN CHARGE34                                                              
+ SCCI        3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_01                                                         
+ SCCI1_02    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_02                                                         
+ SCCI1_03    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_03                                                         
+ SCCI1_04    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_04                                                         
+ SCCI1_05    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_05                                                         
+ SCCI1_06    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_06                                                         
+ SCCI1_07    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_07                                                         
+ SCCI1_08    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_08                                                         
+ SCCI1_09    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_09                                                         
+ SCCI1_10    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_10                                                         
+ SCCI1_11    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_11                                                         
+ SCCI1_12    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_12                                                         
+ SCCI1_13    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_13                                                         
+ SCCI1_14    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_14                                                         
+ SCCI1_15    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_15                                                         
+ SCCI1_16    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_16                                                         
+ SCCI1_17    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_17                                                         
+ SCCI1_18    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_18                                                         
+ SCCI1_19    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_19                                                         
+ SCCI1_20    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_20                                                         
+ SCCI1_21    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE1_21                                                         
+ SCCI2_01    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_01                                                         
+ SCCI2_02    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_02                                                         
+ SCCI2_03    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_03                                                         
+ SCCI2_04    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_04                                                         
+ SCCI2_05    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_05                                                         
+ SCCI2_06    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_06                                                         
+ SCCI2_07    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_07                                                         
+ SCCI2_08    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_08                                                         
+ SCCI2_09    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_09                                                         
+ SCCI2_10    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_10                                                         
+ SCCI2_11    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_11                                                         
+ SCCI2_12    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_12                                                         
+ SCCI2_13    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_13                                                         
+ SCCI2_14    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_14                                                         
+ SCCI2_15    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_15                                                         
+ SCCI2_16    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_16                                                         
+ SCCI2_17    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_17                                                         
+ SCCI2_18    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_18                                                         
+ SCCI2_19    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_19                                                         
+ SCCI2_20    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_20                                                         
+ SCCI2_21    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE2_21                                                         
+ SCCI3_01    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_01                                                         
+ SCCI3_02    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_02                                                         
+ SCCI3_03    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_03                                                         
+ SCCI3_04    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_04                                                         
+ SCCI3_05    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_05                                                         
+ SCCI3_06    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_06                                                         
+ SCCI3_07    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_07                                                         
+ SCCI3_08    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_08                                                         
+ SCCI3_09    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_09                                                         
+ SCCI3_10    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_10                                                         
+ SCCI3_11    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_11                                                         
+ SCCI3_12    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_12                                                         
+ SCCI3_13    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_13                                                         
+ SCCI3_14    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_14                                                         
+ SCCI3_15    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_15                                                         
+ SCCI3_16    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_16                                                         
+ SCCI3_17    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_17                                                         
+ SCCI3_18    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_18                                                         
+ SCCI3_19    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_19                                                         
+ SCCI3_20    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_20                                                         
+ SCCI3_21    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE3_21                                                         
+ SCCI4_01    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_01                                                         
+ SCCI4_02    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_02                                                         
+ SCCI4_03    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_03                                                         
+ SCCI4_04    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_04                                                         
+ SCCI4_05    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_05                                                         
+ SCCI4_06    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_06                                                         
+ SCCI4_07    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_07                                                         
+ SCCI4_08    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_08                                                         
+ SCCI4_09    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_09                                                         
+ SCCI4_10    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_10                                                         
+ SCCI4_11    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_11                                                         
+ SCCI4_12    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_12                                                         
+ SCCI4_13    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_13                                                         
+ SCCI4_14    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_14                                                         
+ SCCI4_15    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_15                                                         
+ SCCI4_16    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_16                                                         
+ SCCI4_17    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_17                                                         
+ SCCI4_18    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_18                                                         
+ SCCI4_19    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_19                                                         
+ SCCI4_20    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_20                                                         
+ SCCI4_21    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE4_21                                                         
+ SCCI5_01    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_01                                                         
+ SCCI5_02    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_02                                                         
+ SCCI5_03    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_03                                                         
+ SCCI5_04    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_04                                                         
+ SCCI5_05    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_05                                                         
+ SCCI5_06    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_06                                                         
+ SCCI5_07    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_07                                                         
+ SCCI5_08    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_08                                                         
+ SCCI5_09    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_09                                                         
+ SCCI5_10    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_10                                                         
+ SCCI5_11    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_11                                                         
+ SCCI5_12    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_12                                                         
+ SCCI5_13    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_13                                                         
+ SCCI5_14    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_14                                                         
+ SCCI5_15    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_15                                                         
+ SCCI5_16    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_16                                                         
+ SCCI5_17    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_17                                                         
+ SCCI5_18    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_18                                                         
+ SCCI5_19    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_19                                                         
+ SCCI5_20    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_20                                                         
+ SCCI5_21    3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK CRYSTAL BIN CHARGE5_21                                                         
+ SCHW        3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE01                                                           
+ SCHW02      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE02                                                           
+ SCHW03      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE03                                                           
+ SCHW04      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE04                                                           
+ SCHW05      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE05                                                           
+ SCHW06      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE06                                                           
+ SCHW07      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE07                                                           
+ SCHW08      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE08                                                           
+ SCHW09      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE09                                                           
+ SCHW10      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE10                                                           
+ SCHW11      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE11                                                           
+ SCHW12      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE12                                                           
+ SCHW13      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE13                                                           
+ SCHW14      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE14                                                           
+ SCHW15      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE15                                                           
+ SCHW16      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE16                                                           
+ SCHW17      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE17                                                           
+ SCHW18      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE18                                                           
+ SCHW19      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE19                                                           
+ SCHW20      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE20                                                           
+ SCHW21      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE21                                                           
+ SCHW22      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE22                                                           
+ SCHW23      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE23                                                           
+ SCHW24      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE24                                                           
+ SCHW25      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE25                                                           
+ SCHW26      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE26                                                           
+ SCHW27      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE27                                                           
+ SCHW28      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE28                                                           
+ SCHW29      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE29                                                           
+ SCHW30      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE30                                                           
+ SCHW31      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE31                                                           
+ SCHW32      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE32                                                           
+ SCHW33      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE33                                                           
+ SCHW34      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE34                                                           
+ SCHW35      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE35                                                           
+ SCHW36      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE36                                                           
+ SCHW37      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE37                                                           
+ SCHW38      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE38                                                           
+ SCHW39      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE39                                                           
+ SCHW40      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE40                                                           
+ SCHW41      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE41                                                           
+ SCHW42      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE42                                                           
+ SCHW43      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE43                                                           
+ SCHW44      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE44                                                           
+ SCHW45      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK GRAUPEL BIN CHARGE45                                                           
+ SCHL        3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE01                                                              
+ SCHL02      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE02                                                              
+ SCHL03      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE03                                                              
+ SCHL04      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE04                                                              
+ SCHL05      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE05                                                              
+ SCHL06      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE06                                                              
+ SCHL07      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE07                                                              
+ SCHL08      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE08                                                              
+ SCHL09      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE09                                                              
+ SCHL10      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE10                                                              
+ SCHL11      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE11                                                              
+ SCHL12      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE12                                                              
+ SCHL13      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE13                                                              
+ SCHL14      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE14                                                              
+ SCHL15      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE15                                                              
+ SCHL16      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE16                                                              
+ SCHL17      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE17                                                              
+ SCHL18      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE18                                                              
+ SCHL19      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE19                                                              
+ SCHL20      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE20                                                              
+ SCHL21      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE21                                                              
+ SCHL22      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE22                                                              
+ SCHL23      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE23                                                              
+ SCHL24      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE24                                                              
+ SCHL25      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE25                                                              
+ SCHL26      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE26                                                              
+ SCHL27      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE27                                                              
+ SCHL28      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE28                                                              
+ SCHL29      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE29                                                              
+ SCHL30      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE30                                                              
+ SCHL31      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE31                                                              
+ SCHL32      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE32                                                              
+ SCHL33      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE33                                                              
+ SCHL34      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE34                                                              
+ SCHL35      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE35                                                              
+ SCHL36      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE36                                                              
+ SCHL37      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE37                                                              
+ SCHL38      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE38                                                              
+ SCHL39      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE39                                                              
+ SCHL40      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE40                                                              
+ SCHL41      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE41                                                              
+ SCHL42      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE42                                                              
+ SCHL43      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE43                                                              
+ SCHL44      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE44                                                              
+ SCHL45      3  xyz3d   1   0   0   0   0   0   0   0  coulomb m-3      TAK HAIL BIN CHARGE45                                                              
+ CPION       3  xyz3d   1   0   0   0   1   0   0   0  meters-3         POS ION CONCENTRATION                                                              
+ CNION       3  xyz3d   1   0   0   0   1   0   0   0  meters-3         NEG ION CONCENTRATION                                                              
+ CCCN        3  xyz3d   1   0   0   0   1   0   0   0  cm-3             CCN CONCENTRATION                                                                  
+ CCIN        3  xyz3d   1   0   0   0   1   0   0   0  cm-3             CLOUD ICE NUCLEI CONCENTRATION                                                     
+ CCINA       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             NUMBER OF ACTIVATED ICE NUCLEI                                                     
+ CCCNA       3  xyz3d   1   0   0   0   1   0   0   0  cm-3             NUMBER OF ACTIVATED CCN                                                            
+ CNG         3  xyz3d   1   0   0   0   1   0   0   0  cm-3             HALLETT-MOSSOP ICE CONCENTRATION                                                   
+ SSMX        3  xyz3d   1   0   0   0   0   1   0   0  percent          MAX SUPERSATURATION                                                                
+EOF                                                                                                                                                        

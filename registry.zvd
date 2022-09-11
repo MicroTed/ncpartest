@@ -1,0 +1,265 @@
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+          25                                                                                                                                               
+          86                                                                                                                                               
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ NX                    int   -1     -1.00000                                                                                                               
+ NY                    int   -1     -1.00000                                                                                                               
+ NZ                    int   -1     -1.00000                                                                                                               
+ NG                    int   -1     -1.00000                                                                                                               
+ NXEND                 int   -1     -1.00000                                                                                                               
+ NYEND                 int   -1     -1.00000                                                                                                               
+ NZEND                 int   -1     -1.00000                                                                                                               
+ PREFIX_NAME           str   -1     -1.00000                                                                                                               
+ MEMBER                int   -1     -1.00000                                                                                                               
+ SIZE_OF_ENSEMBLE      int   -1     -1.00000                                                                                                               
+ CREATION_DATE         str   -1     -1.00000                                                                                                               
+ CREATION_TIME         str   -1     -1.00000                                                                                                               
+ MEMBER_NAME           str   -1     -1.00000                                                                                                               
+ OUTPUT_FILE_NAME      str   -1     -1.00000                                                                                                               
+ COARDS                str   -1     -1.00000                                                                                                               
+ Conventions           str   -1     -1.00000                                                                                                               
+ MICROPHYS             str   -1     -1.00000                                                                                                               
+ V5DFIELDS             str   -1     -1.00000                                                                                                               
+ YEAR                  int   -1     -1.00000                                                                                                               
+ MONTH                 int   -1     -1.00000                                                                                                               
+ DAY                   int   -1     -1.00000                                                                                                               
+ HOUR                  int   -1     -1.00000                                                                                                               
+ MINUTE                int   -1     -1.00000                                                                                                               
+ SECOND                int   -1     -1.00000                                                                                                               
+ TILE_INDEX            int   -1     -1.00000                                                                                                               
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ ----------                                                                                                                                                
+ NX          0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF POINTS ON U-GRID IN X                                                    
+ NY          0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF POINTS ON V-GRID IN Y                                                    
+ NZ          0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF POINTS ON W-GRID IN Z                                                    
+ NG          0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF COMPUTATIONAL BUFFER ZONES                                               
+ NXEND       0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF POINTS ON FULL U-GRID IN X                                               
+ NYEND       0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF POINTS ON FULL V-GRID IN Y                                               
+ NZEND       0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF POINTS ON FULL W-GRID IN Z                                               
+ NSCALAR     0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF SCALAR FIELDS                                                            
+ NSMALL      0  icnst   0   0   0   0  -1  -1  -1   0  count            NUMBER OF SMALL TIME STEPS                                                         
+ BCX         0  icnst   0   0   0   0  -1  -1  -1   0  count            BOUNDARY CONDITION FOR X                                                           
+ BCY         0  icnst   0   0   0   0  -1  -1  -1   0  count            BOUNDARY CONDITION FOR Y                                                           
+ BCZ         0  icnst   0   0   0   0  -1  -1  -1   0  count            BOUNDARY CONDITION FOR Z                                                           
+ N_INNER     0  icnst   0   0   0   0  -1  -1  -1   0  count            # POINTS FOR HOR STRETCHED GRID                                                    
+ N_BNDLYR    0  icnst   0   0   0   0  -1  -1  -1   0  count            # BLR POINTS GRID WHERE DZBOT CONSTANT                                             
+ HOLE_FILL   0  icnst   0   0   0   0  -1  -1  -1   0  count            HOLE FILLING PARAMETER FOR MICROPHYSICS                                            
+ AUTOCONV    0  icnst   0   0   0   0  -1  -1  -1   0  count            AUTOCONVERSION FLAG                                                                
+ TIME        0  icnst   1   0   0   0  -1  -1  -1   0  seconds          LOCAL MODEL TIME IN SECONDS FROM START                                             
+ TRESTART    0  icnst   0   0   0   0  -1  -1  -1   0  seconds          DT IN SECONDS BETWEEN RESTART DUMPS                                                
+ THISTORY    0  icnst   1   0   0   0  -1  -1  -1   0  seconds          DT IN SECONDS BETWEEN HISTORY DUMPS                                                
+ TVIS5D      0  icnst   1   0   0   0  -1  -1  -1   0  seconds          DT IN SECONDS BETWEEN VIS5D DUMPS                                                  
+ TPRINT      0  icnst   0   0   0   0  -1  -1  -1   0  seconds          DT IN SECONDS BETWEEN PRINT OUTPUT                                                 
+ TSTAT       0  icnst   0   0   0   0  -1  -1  -1   0  seconds          DT IN SECONDS BETWEEN STAT OUTPUT                                                  
+ TIME_STOP   0  icnst   0   0   0   0  -1  -1  -1   0  seconds          LOCAL TIME IN SECS MODEL INTEGRATED TO                                             
+ IPCONC      0  icnst   0   0   0   0  -1  -1  -1   0  count            CONCENTRATION  FLAG                                                                
+ INUCOPT     0  icnst   0   0   0   0  -1  -1  -1   0  count            FLAG FOR ACTIVATED NUCLEI PREDICTION                                               
+ IPELEC      0  icnst   0   0   0   0  -1  -1  -1   0  count            ELECTRIFICATION FLAG                                                               
+ LGTSEED     0  icnst   1   0   0   0  -1  -1  -1   0  seconds          Random number seed for lightning                                                   
+ track       0  icnst   1   0   0   0  -1  -1  -1   0  meters sec-1     Y-TRANSLATION SPEED OF GRID                                                        
+ SST         0  rcnst   1   0   0   0  -1  -1  -1   0  kelvin           Sea Surface Temperature                                                            
+ ICHAFF      0  icnst   0   0   0   0  -1  -1  -1   0  count            CHAFF FLAG                                                                         
+ IENKF       0  icnst   0   0   0   0  -1  -1  -1   0  count            ENKF FLAG                                                                          
+ ISFCPHYS    0  icnst   0   0   0   0  -1  -1  -1   0  count            SURFACE PHYSICS FLAG                                                               
+ IMURAIN     0  icnst   0   0   0   0  -1  -1  -1   0  count            RAIN SECOND SHAPE PARAMETER                                                        
+ DT          0  rcnst   1   0   0   0  -1  -1  -1   0  seconds          TIME STEP                                                                          
+ DX          0  rcnst   0   0   0   0  -1  -1  -1   0  meters           MEAN X-GRID SPACING                                                                
+ DY          0  rcnst   0   0   0   0  -1  -1  -1   0  meters           MEAN Y-GRID SPACING                                                                
+ DZ          0  rcnst   0   0   0   0  -1  -1  -1   0  meters           MEAN Z-GRID SPACING                                                                
+ DX_STRETCH  0  rcnst   0   0   0   0  -1  -1  -1   0  count            STRETCH PARAMETER FOR X-GRID                                                       
+ DY_STRETCH  0  rcnst   0   0   0   0  -1  -1  -1   0  count            STRETCH PARAMETER FOR Y-GRID                                                       
+ DZ_STRETCH  0  rcnst   0   0   0   0  -1  -1  -1   0  count            STRETCH PARAMETER FOR Z-GRID                                                       
+ DX_CORNER   0  rcnst   0   0   0   0  -1  -1  -1   0  count            DX OF SW CORNER DUE TO BOX MOTION                                                  
+ DY_CORNER   0  rcnst   0   0   0   0  -1  -1  -1   0  count            DY OF SW CORNER DUE TO BOX MOTION                                                  
+ XDOMAIN     0  rcnst   0   0   0   0  -1  -1  -1   0  meters           E-W Domain extent                                                                  
+ YDOMAIN     0  rcnst   0   0   0   0  -1  -1  -1   0  meters           S-N Domain extent                                                                  
+ ZDOMAIN     0  rcnst   0   0   0   0  -1  -1  -1   0  meters           Vertical Domain extent                                                             
+ CORIOLIS    0  rcnst   0   0   0   0  -1  -1  -1   0  second-1         CORIOLIS VALUE                                                                     
+ CDM         0  rcnst   0   0   0   0  -1  -1  -1   0  count            DRAG COEFFICENT IF BCZ == 1                                                        
+ PSFC        0  rcnst   0   0   0   0  -1  -1  -1   0  hPa              SURFACE PRESSURE                                                                   
+ TSFC        0  rcnst   0   0   0   0  -1  -1  -1   0  kelvin           SURFACE TEMPERATURE AT GROUND                                                      
+ QSFC        0  rcnst   0   0   0   0  -1  -1  -1   0  kg kg-1          SURFACE MIXING RATIO AT GROUND                                                     
+ XBAR        0  rcnst   1   0   0   0  -1  -1  -1   0  meters           USED TO TRACK STORM MOTION                                                         
+ YBAR        0  rcnst   1   0   0   0  -1  -1  -1   0  meters           USED TO TRACK STORM MOTION                                                         
+ UGRID0      0  rcnst   0   0   0   0  -1  -1  -1   0  meters sec-1     X-TRANSLATION SPEED OF GRID AT T=0                                                 
+ VGRID0      0  rcnst   0   0   0   0  -1  -1  -1   0  meters sec-1     Y-TRANSLATION SPEED OF GRID AT T=0                                                 
+ UGRID       0  rcnst   1   0   0   0  -1  -1  -1   0  meters sec-1     X-TRANSLATION SPEED OF GRID                                                        
+ VGRID       0  rcnst   1   0   0   0  -1  -1  -1   0  meters sec-1     Y-TRANSLATION SPEED OF GRID                                                        
+ XG_POS      0  rcnst   1   0   0   0  -1  -1  -1   0  meters           LOCATION OF SW BOX CORNER                                                          
+ YG_POS      0  rcnst   1   0   0   0  -1  -1  -1   0  meters           LOCATION OF SW BOX CORNER                                                          
+ RHO_QR      0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF RAINWATER                                                               
+ CNOR        0  rcnst   0   0   0   0  -1  -1  -1   0  count            SLOPE INTERCEPT OF RAINWATER                                                       
+ RHO_QS      0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF SNOW                                                                    
+ CNOS        0  rcnst   0   0   0   0  -1  -1  -1   0  count            SLOPE INTERCEPT OF SNOW                                                            
+ RHO_QH      0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF HAIL                                                                    
+ RHO_QHL     0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF LARGE HAIL                                                              
+ CNOH        0  rcnst   0   0   0   0  -1  -1  -1   0  count            SLOPE INTERCEPT OF HAIL                                                            
+ CNOHL       0  rcnst   0   0   0   0  -1  -1  -1   0  count            SLOPE INTERCEPT OF LARGE HAIL                                                      
+ RHO_QR_10   0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF RAINWATER                                                               
+ RHO_QS_10   0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF SNOW                                                                    
+ RHO_QGL_10  0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF GRAUPEL-L                                                               
+ RHO_QGM_10  0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF GRAUPEL-M                                                               
+ RHO_QGH_10  0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF GRAUPEL-H                                                               
+ RHO_QF_10   0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF FROZEN DROPS                                                            
+ RHO_QH_10   0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF HAIL                                                                    
+ RHO_QHL_10  0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF LARGE HAIL                                                              
+ CNOR_10     0  rcnst   0   0   0   0  -1  -1  -1   0  count            SLOPE INTERCEPT OF RAINWATER                                                       
+ CNOS_10     0  rcnst   0   0   0   0  -1  -1  -1   0  count            SLOPE INTERCEPT OF SNOW                                                            
+ CNOGL_10    0  rcnst   0   0   0   0  -1  -1  -1   0  count            SLOPE INTERCEPT OF GRAUPEL-L                                                       
+ CNOGM_10    0  rcnst   0   0   0   0  -1  -1  -1   0  count            SLOPE INTERCEPT OF GRAUPEL-M                                                       
+ CNOGH_10    0  rcnst   0   0   0   0  -1  -1  -1   0  count            SLOPE INTERCEPT OF GRAUPEL-H                                                       
+ CNOF_10     0  rcnst   0   0   0   0  -1  -1  -1   0  count            SLOPE INTERCEPT OF FROZEN DROPS                                                    
+ CNOH_10     0  rcnst   0   0   0   0  -1  -1  -1   0  count            SLOPE INTERCEPT OF HAIL                                                            
+ CNOHL_10    0  rcnst   0   0   0   0  -1  -1  -1   0  count            SLOPE INTERCEPT OF LARGE HAIL                                                      
+ QCMINCON    0  rcnst   0   0   0   0  -1  -1  -1   0  kg kg-1          KESSLER QC THRESHOLD FOR AUTOCONVERSION                                            
+ CWDIAP      0  rcnst   0   0   0   0  -1  -1  -1   0  count            MEAN DIAMETER FOR Ferrier/Berry AC                                                 
+ CWDISP      0  rcnst   0   0   0   0  -1  -1  -1   0  count            MEAN DISP FOR Ferrier/Berry AC                                                     
+ CCN         0  rcnst   0   0   0   0  -1  -1  -1   0  count            CCN CONCENTRATION FOR Ferrier/Berry AC                                             
+ CCNUF       0  rcnst   0   0   0   0  -1  -1  -1   0  count            CCN CONCENTRATION ULTRA FINE                                                       
+ LAT         0  rcnst   0   0   0   0  -1  -1  -1   0  degrees          STARTING LATITUDE OF SW CORNER OF GRID                                             
+ LON         0  rcnst   0   0   0   0  -1  -1  -1   0  degrees          STARTING LONGITUDE OF SW CORNER OF GRID                                            
+ HGT         0  rcnst   0   0   0   0  -1  -1  -1   0  meters           HEIGHT OF THE GRID                                                                 
+ ALPHAH      0  rcnst   0   0   0   0  -1  -1  -1   0  count            SHAPE PARAMETER OF GRAUPEL                                                         
+ ALPHAHL     0  rcnst   0   0   0   0  -1  -1  -1   0  count            SHAPE PARAMETER OF HAIL                                                            
+ ALPHAI      0  rcnst   0   0   0   0  -1  -1  -1   0  count            SHAPE PARAMETER OF ICE CRYSTALS                                                    
+ ALPHAS      0  rcnst   0   0   0   0  -1  -1  -1   0  count            SHAPE PARAMETER OF SNOW                                                            
+ EHSLFO0     0  rcnst   0   0   0   0  -1  -1  -1   0  count            FACTOR in graupel-snow collection                                                  
+ NTC_MY      0  rcnst   0   0   0   0  -1  -1  -1   0  meters-3         FIXED NT OF CLOUD FOR MY SCHEME                                                    
+ RHO_QR_MY   0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF RAINWATER FOR MY SCHEME                                                 
+ RHO_QI_MY   0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF ICE CRYSTALS FOR MY SCHEME                                              
+ RHO_QS_MY   0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF SNOW FOR MY SCHEME                                                      
+ RHO_QG_MY   0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF GRAUPEL FOR MY SCHEME                                                   
+ RHO_QH_MY   0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF HAIL FOR MY SCHEME                                                      
+ CNOR_MY     0  rcnst   0   0   0   0  -1  -1  -1   0  m4               INTERCEPT PARAM OF RAIN FOR MY SCHEME                                              
+ CNOS_MY     0  rcnst   0   0   0   0  -1  -1  -1   0  m4               INTERCEPT PARAM OF SNOW FOR MY SCHEME                                              
+ CNOG_MY     0  rcnst   0   0   0   0  -1  -1  -1   0  m4               INTERCEPT PARAM OF GRAUPEL FOR MY SCHEME                                           
+ CNOH_MY     0  rcnst   0   0   0   0  -1  -1  -1   0  m4               INTERCEPT PARAM OF HAIL FOR MY SCHEME                                              
+ ALPHAR_MY   0  rcnst   0   0   0   0  -1  -1  -1   0  count            SHAPE PARAMETER OF RAIN FOR MY SCHEME                                              
+ ALPHAI_MY   0  rcnst   0   0   0   0  -1  -1  -1   0  count            SHAPE PARAMETER OF ICE FOR MY SCHEME                                               
+ ALPHAS_MY   0  rcnst   0   0   0   0  -1  -1  -1   0  count            SHAPE PARAMETER OF SNOW FOR MY SCHEME                                              
+ ALPHAG_MY   0  rcnst   0   0   0   0  -1  -1  -1   0  count            SHAPE PARAMETER OF GRAUPEL FOR MY SCHEME                                           
+ ALPHAH_MY   0  rcnst   0   0   0   0  -1  -1  -1   0  count            SHAPE PARAMETER OF HAIL FOR MY SCHEME                                              
+ RHO_QG_TAK  0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF Takahashi graupel                                                       
+ RHO_QH_TAK  0  rcnst   0   0   0   0  -1  -1  -1   0  kg meters-3      DENSITY OF Takahashi hail/frozen drops                                             
+ XC          1  x1d     0   0   0   0  -1  -1  -1   0  meters           SCALAR GRID POSITION IN X                                                          
+ XE          1  x1d     0   1   0   0  -1  -1  -1   0  meters           STAGGERED GRID POSITION IN X                                                       
+ DXC         1  x1d     0   0   0   0  -1  -1  -1   0  meters-1         1 / GRID SPACING FOR X-GRID CENTERS                                                
+ DXE         1  x1d     0   1   0   0  -1  -1  -1   0  meters-1         1 / GRID SPACING FOR X-GRID EDGE                                                   
+ YC          1  y1d     0   0   0   0  -1  -1  -1   0  meters           SCALAR GRID POSITION IN Y                                                          
+ YE          1  y1d     0   0   1   0  -1  -1  -1   0  meters           STAGGERED GRID POSITION IN Y                                                       
+ DYC         1  y1d     0   0   0   0  -1  -1  -1   0  meters-1         1 / GRID SPACING FOR Y-GRID CENTERS                                                
+ DYE         1  y1d     0   0   1   0  -1  -1  -1   0  meters-1         1 / GRID SPACING FOR Y-GRID EDGE                                                   
+ ZC          1  z1d     0   0   0   0  -1  -1  -1   0  meters           SCALAR GRID POSITION IN Z                                                          
+ ZE          1  z1d     0   0   0   1  -1  -1  -1   0  meters           STAGGERED GRID POSITION IN Z                                                       
+ DZC         1  z1d     0   0   0   0  -1  -1  -1   0  meters-1         1 / GRID SPACING FOR Z-GRID CENTERS                                                
+ DZE         1  z1d     0   0   0   1  -1  -1  -1   0  meters-1         1 / GRID SPACING FOR Z-GRID EDGE                                                   
+ UINIT       1  z1d     1   0   0   0  -1  -1  -1   0  meters sec-1     BASE STATE U                                                                       
+ VINIT       1  z1d     1   0   0   0  -1  -1  -1   0  meters sec-1     BASE STATE V                                                                       
+ WINIT       1  z1d     0   0   0   1  -1  -1  -1   0  meters sec-1     BASE STATE W                                                                       
+ PIINIT      1  z1d     1   0   0   0  -1  -1  -1   0  count            BASE STATE PI                                                                      
+ KMINIT      1  z1d     0   0   0   0   1  -1  -1   0  meters2 sec-1    BASE STATE KM                                                                      
+ KMBASERM    1  z1d     1   0   0   0   1  -1  -1   0  meters2 sec-1    BASE STATE KM SUBTRACTION                                                          
+ THINIT      1  z1d     1   0   0   0   1  -1  -1   0  kelvin           BASE STATE THETA                                                                   
+ QVINIT      1  z1d     1   0   0   0   1  -1  -1   0  kg kg-1          BASE STATE QV                                                                      
+ CCNUFINIT   1  z1d     0   0   0   0   1  -1  -1   0  meters-3         BASE STATE CCCNUF                                                                  
+ CCNINIT     1  z1d     0   0   0   0   1  -1  -1   0  meters-3         BASE STATE CCCN                                                                    
+ CPIONINIT   1  z1d     0   0   0   1   1  -1  -1   0  meters-3         BASE STATE POSITIVE ION CONCENTRATION                                              
+ CNIONINIT   1  z1d     0   0   0   1   1  -1  -1   0  meters-3         BASE STATE NEGATIVE ION CONCENTRATION                                              
+ MUPOSZC     1  z1d     0   0   0   1   1  -1  -1   0  meters-3         POSITIVE ION MOBILITY AT SCALAR POINTS                                             
+ MUNEGZC     1  z1d     0   0   0   1   1  -1  -1   0  meters-3         NEGATIVE ION MOBILITY AT SCALAR POINTS                                             
+ MUPOSZE     1  z1d     0   0   0   1   1  -1  -1   0  meters-3         POSITIVE ION MOBILITY AT EDGE POINTS                                               
+ MUNEGZE     1  z1d     0   0   0   1   1  -1  -1   0  meters-3         NEGATIVE ION MOBILITY AT EDGE POINTS                                               
+ UINIT0      1  z1d     0   0   0   0  -1  -1  -1   0  meters sec-1     BASE STATE U AT TIME 0                                                             
+ VINIT0      1  z1d     0   0   0   0  -1  -1  -1   0  meters sec-1     BASE STATE V AT TIME 0                                                             
+ PIINIT0     1  z1d     0   0   0   0  -1  -1  -1   0  count            BASE STATE PI AT TIME 0                                                            
+ THINIT0     1  z1d     0   0   0   0   1  -1  -1   0  kelvin           BASE STATE THETA AT TIME 0                                                         
+ QVINIT0     1  z1d     0   0   0   0   1  -1  -1   0  kg kg-1          BASE STATE QV AT TIME 0                                                            
+ EX          1  z1d     0   0   0   0   0  -1  -1   0  volt meters-1    ELECTRIC FIELD X-COMPONENT                                                         
+ EY          1  z1d     0   0   0   0   0  -1  -1   0  volt meters-1    ELECTRIC FIELD Y-COMPONENT                                                         
+ EZ          1  z1d     0   0   0   0   0  -1  -1   0  volt meters-1    ELECTRIC FIELD Z-COMPONENT                                                         
+ EMAG        1  z1d     0   0   0   0   0  -1  -1   0  volt meters-1    ELECTRIC FIELD MAGNITUDE                                                           
+ POTENTIAL   1  z1d     0   0   0   0   0  -1  -1   0  volt             ELECTRIC POTENTIAL                                                                 
+ FLSHN       1  z1d     0   0   0   0   1  -1  -1   0  count            NEGATIVE CHANNEL SEGMENTS                                                          
+ FLSHP       1  z1d     0   0   0   0   1  -1  -1   0  count            POSITIVE CHANNEL SEGMENTS                                                          
+ FLSHI       1  z1d     0   0   0   0   1  -1  -1   0  count            FLASH INITIATION POINTS                                                            
+ RSCGHIS     1  z1d     0   0   0   0   1  -1  -1   0  C m-3 s-1        NONINDUCTIVE GRAUPEL CHARGING RATE                                                 
+ RSCGHW      1  z1d     0   0   0   0   1  -1  -1   0  C m-3 s-1        INDUCTIVE GRAUPEL CHARGING RATE                                                    
+ SCNET       1  z1d     0   0   0   0   1  -1  -1   0  C m-3            NET CHARGE DENSITY                                                                 
+ VZF         1  z1d     0   0   0   0   0  -1  -1   0  count            POWER-WEIGHTED FALL VELOCITY                                                       
+ RAIN_RAT    2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2 s-1       SFC PRECIP RATE FOR LIQUID                                                         
+ HAIL_RAT    2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2 s-1       SFC PRECIP RATE FOR ICE                                                            
+ RAIN_ACC    2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2           ACCUMULATED LIQUID PRECIP                                                          
+ HAIL_ACC    2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2           ACCUMULATED FROZEN PRECIP                                                          
+ HAIL_ACCH   2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2           ACCUMULATED HAIL                                                                   
+ HAIL_ACCHF  2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2           ACCUMULATED HAIL FROM FD                                                           
+ HAIL_NACCF  2  xy2d    1   0   0   0   1  -1  -1   0  m-2              ACCUMULATED HAIL NUMBER from FD                                                    
+ HAIL_NACC   2  xy2d    1   0   0   0   1  -1  -1   0  m-2              ACCUMULATED HAIL NUMBER                                                            
+ HAIL_DIAM   2  xy2d    1   0   0   0   1  -1  -1   0  mm               MEAN MASS HAIL Diameter (mm)                                                       
+ GR_DIAM     2  xy2d    1   0   0   0   1  -1  -1   0  mm               MEAN MASS Graupel Diameter (mm)                                                    
+ GR_NACC     2  xy2d    1   0   0   0   1  -1  -1   0  m-2              ACCUMULATED Graupel NUMBER                                                         
+ GR_ACC      2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2           ACCUMULATED Graupel Mass                                                           
+ FD_DIAM     2  xy2d    1   0   0   0   1  -1  -1   0  mm               MEAN MASS FD Diameter (mm)                                                         
+ FD_NACC     2  xy2d    1   0   0   0   1  -1  -1   0  m-2              ACCUMULATED FD NUMBER                                                              
+ FD_ACC      2  xy2d    1   0   0   0   1  -1  -1   0  kg m-2           ACCUMULATED FROZEN DROPS                                                           
+ COMP_DBZ    2  xy2d    1   0   0   0   1  -1  -1   0  dBZ              COMPOSITE REFLECTIVITY                                                             
+ WZ_SFC_MAX  2  xy2d    1   0   0   0   1  -1  -1   0  m-2 s-2          MAX SURFACE VORTICITY OVER HISTORY TIME                                            
+ WZ_SFC_MIN  2  xy2d    1   0   0   0   1  -1  -1   0  m-2 s-2          MIN SURFACE VORTICITY OVER HISTORY TIME                                            
+ UV_SFC_MAX  2  xy2d    1   0   0   0   1  -1  -1   0  m-2 s-1          MAX SURFACE WIND SPEED OVER HISTORY TIME                                           
+ DBZ         3  xyz3d   1   0   0   0   0   1   0   0  dBZ              RADAR REFLECTIVITY                                                                 
+ WZ          3  xyz3d   1   0   0   0   0   1   0   0  sec-1            VERTICAL VORTICITY                                                                 
+ P           3  xyz3d   1   0   0   0   0   1   0   0  Pa               AIR PRESSURE                                                                       
+ T           3  xyz3d   1   0   0   0   1   1   0   0  kelvin           AIR TEMPERATURE                                                                    
+ THETA_V     3  xyz3d   1   0   0   0   1   1   0   0  kelvin           Virtual Pot. Temp.                                                                 
+ HWDN        3  xyz3d   1   0   0   0   0   1   0   0  kg m-3           Graupel Density                                                                    
+ HLDN        3  xyz3d   1   0   0   0   0   1   0   0  kg m-3           Hail Density                                                                       
+ FWDN        3  xyz3d   1   0   0   0   0   1   0   0  kg m-3           Frozen Drop Density                                                                
+ U           3  xyz3d   1   1   0   0   0   1   0   0  meters sec-1     X-WIND COMPONENT                                                                   
+ V           3  xyz3d   1   0   1   0   0   1   0   0  meters sec-1     Y-WIND COMPONENT                                                                   
+ W           3  xyz3d   1   0   0   1   0   1   0   0  meters sec-1     Z-WIND COMPONENT                                                                   
+ PI          3  xyz3d   1   0   0   0   0   1   0   0  count            PERT. EXNER                                                                        
+ KM          3  xyz3d   1   0   0   0   1   1   0   0  meters2 sec-1    MIXING COEFFICIENT                                                                 
+ TH          3  xyz3d   1   0   0   0   1   1   0   1  kelvin           POTENTIAL TEMPERATURE                                                              
+ QV          3  xyz3d   1   0   0   0   1   1   0   2  kg kg-1          VAPOR MIXING RATIO                                                                 
+ QC          3  xyz3d   1   0   0   0   1   1   0   3  kg kg-1          CLOUD MIXING RATIO                                                                 
+ QR          3  xyz3d   1   0   0   0   1   1   0   3  kg kg-1          RAIN MIXING RATIO                                                                  
+ QI          3  xyz3d   1   0   0   0   1   1   0   3  kg kg-1          ICE MIXING RATIO                                                                   
+ QS          3  xyz3d   1   0   0   0   1   1   0   3  kg kg-1          SNOW MIXING RATIO                                                                  
+ QH          3  xyz3d   1   0   0   0   1   1   0   3  kg kg-1          GRAUPEL MIXING RATIO                                                               
+ QF          3  xyz3d   1   0   0   0   1   1  -1   3  kg kg-1          FROZEN DROP MIXING RATIO                                                           
+ QHL         3  xyz3d   1   0   0   0   1   1   0   3  kg kg-1          HAIL MIXING RATIO                                                                  
+ CCCNA       3  xyz3d   1   0   0   0   1   0   0   0  meters-3         NUMBER OF ACTIVATED CCN                                                            
+ CCCN        3  xyz3d   1   0   0   0   1   0   0   0  meters-3         CCN CONCENTRATION                                                                  
+ CCW         3  xyz3d   1   0   0   0   1   0   0   0  meters-3         CLOUD CONCENTRATION                                                                
+ CRW         3  xyz3d   1   0   0   0   1   0   0   0  meters-3         RAIN CONCENTRATION                                                                 
+ CCI         3  xyz3d   1   0   0   0   1   0   0   0  meters-3         COLM ICE CONCENTRATION                                                             
+ CSW         3  xyz3d   1   0   0   0   1   0   0   0  meters-3         SNOW CONCENTRATION                                                                 
+ CHW         3  xyz3d   1   0   0   0   1   0   0   0  meters-3         GRAUPEL CONCENTRATION                                                              
+ CFW         3  xyz3d   1   0   0   0   1   0   0   0  meters-3         FROZEN DROP CONCENTRATION                                                          
+ CHL         3  xyz3d   1   0   0   0   1   0   0   0  meters-3         HAIL CONCENTRATION                                                                 
+ CHLF        3  xyz3d   1   0   0   0   1   0   0   0  meters-3         HAIL CONCENTRATION FROM FD                                                         
+ ZHW         3  xyz3d   1   0   0   0   1   0   0   0  Z meters-3       GRAUPEL REFLECTIVITY                                                               
+ ZFW         3  xyz3d   1   0   0   0   1   0   0   0  Z meters-3       FROZEN DROP REFLECTIVITY                                                           
+ ZHL         3  xyz3d   1   0   0   0   1   0   0   0  Z meters-3       HAIL REFLECTIVITY                                                                  
+ ZRW         3  xyz3d   1   0   0   0   1   0   0   0  Z meters-3       RAIN REFLECTIVITY                                                                  
+ SSMX        3  xyz3d   1   0   0   0   0   1   0   0  percent          MAX SUPERSATURATION                                                                
+ VHW         3  xyz3d   1   0   0   0   1   0   0   0  m3 m-3           GRAUPEL PARTICLE VOLUME                                                            
+ VFW         3  xyz3d   1   0   0   0   1   0   0   0  m3 m-3           FROZEN DROP PARTICLE VOLUME                                                        
+ VHL         3  xyz3d   1   0   0   0   1   0   0   0  m3 m-3           HAIL PARTICLE VOLUME                                                               
+EOF                                                                                                                                                        

@@ -1,0 +1,10 @@
+&params
+  nx = 40,
+  ny = 40,
+  nprocx = 2,
+  nprocy = 2,
+!  regfile = 'registry.zvd'
+  regfile = 'registry.take'
+  parallelio_type = 2
+  parallel_compress = .false.,
+/

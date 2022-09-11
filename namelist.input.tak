@@ -1,0 +1,7 @@
+&params
+  nx = 40,
+  ny = 40,
+  nprocx = 1,
+  nprocy = 1,
+  regfile = 'registry.take.2d3d'
+/
