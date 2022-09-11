@@ -1,10 +1,15 @@
+! parallelio_type : 1 = hdf5; 2 = pnetcdf (64-bit offset)
+
 &params
   nx = 40,
   ny = 40,
   nprocx = 2,
-  nprocy = 2,
+  nprocy = 1,
 !  regfile = 'registry.zvd'
+!  regfile = 'registry.take.no_coord'
+!  regfile = 'registry.take.xc_only'
   regfile = 'registry.take'
-  parallelio_type = 2
+  write_attributes = .true.
+  parallelio_type = 1
   parallel_compress = .false.,
 /

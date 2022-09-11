@@ -162,7 +162,7 @@ MODULE FILE_MODULE
    integer             :: historyoutput = 1      ! 0=netcdf for each MPI tile; 1=single netcdf, 2=fortran binary
    integer             :: historyinput  = -1     ! 0=netcdf for each MPI tile; 1=single netcdf, 2=fortran binary
    integer             :: restartformat = 1      ! 0=netcdf for each MPI tile; 1=single netcdf, 2=fortran binary
-   logical             :: parallelio = .false.
+   logical             :: parallelio = .true.
    logical             :: parallel_compress = .false.
    logical             :: parallel_compress_on = .false.
    integer             :: parallelio_in = -1   ! used for restarting from a netcdf4 file but output will be pnetcdf
@@ -195,6 +195,7 @@ MODULE GRIDIO_MODULE
  implicit none
  
  logical :: DEBUG_IO       = .true.
+ logical :: write_attributes = .true.
 ! logical DEBUG_IO       ; parameter(DEBUG_IO       = .true.)
 ! #if defined (NC4) && defined (MPI)
 ! integer, parameter :: NF90_INDEPENDENT = 0
@@ -676,6 +677,8 @@ SUBROUTINE DEFINE_NCDF_VAR(ncid,dim_id,var,dimvals)
 
 ! DEFINE ATTRIBUTES
 
+  IF ( write_attributes ) THEN
+  
   status = NF90_PUT_ATT(ncid, nid, "type", var%type)
   IF(status /= NF90_NOERR) print *,'DEFINE_NCDF_VAR:  Error creating variable attribute long_name: ', var%name
 
@@ -689,15 +692,6 @@ SUBROUTINE DEFINE_NCDF_VAR(ncid,dim_id,var,dimvals)
 
   status = NF90_PUT_ATT(ncid, nid, "index",     var%index)
   IF(status /= NF90_NOERR) print *,'DEFINE_NCDF_VAR:  Error creating variable attribute index:     ', var%name
-
-!  ENDIF
-!  IF ( .false. ) THEN
-
-!  ELSE
-!   i = var%index
-!   write(tmpstring,'(i5)' ) var%index
-!  status = NF90_PUT_ATT(ncid, nid, "index",     tmpstring)
-!  IF(status /= NF90_NOERR) print *,'DEFINE_NCDF_VAR:  Error creating variable attribute index:     ', var%name
 
 !  ENDIF
 
@@ -753,6 +747,8 @@ SUBROUTINE DEFINE_NCDF_VAR(ncid,dim_id,var,dimvals)
     status = NF90_PUT_ATT(ncid, nid, "axis",   'Z')
     IF(status /= NF90_NOERR) print *,'DEFINE_NCDF_VAR:  Error creating variable attribute axis:   ', var%name
   ENDIF
+  
+  ENDIF ! write_attributes
 
   IF ( historyoutput == -1 .and. var%dim .gt. 0 ) THEN
   IF ( isinteger ) THEN
@@ -856,7 +852,8 @@ program commas_netcdf
       nx, ny,         &
       regfile,        &
       parallel_compress, &
-      parallelio_type 
+      parallelio_type,  &
+      write_attributes
 
       call MPI_Init(ierr)
       call MPI_Comm_rank(MPI_COMM_WORLD, my_rank, ierr)
@@ -871,6 +868,10 @@ program commas_netcdf
       read(15,NML=params,iostat=istat)
       IF ( istat /= 0 ) THEN
         write(0,*) 'PROBLEM WITH PARAMS namelist: not found or bad token'
+      ELSE
+        IF ( my_rank == 0 ) THEN
+          write(6, nml=params)
+        ENDIF
       ENDIF
       close(15)
 
@@ -992,10 +993,10 @@ program commas_netcdf
   ! overwrite this file, if it already exists.
 !  call check( nf90_create(FILE_NAME, nf90_netcdf4, ncid) )
    IF( parallelio_type == 1 ) THEN
-     IF ( DEBUG_IO )write(0,*) 'hdf5 create, rank = ',my_rank
+     IF ( DEBUG_IO ) write(0,*) 'hdf5 create, rank = ',my_rank
      status = nf90_create(FILE_NAME, cmode, ncid, comm = my_comm, info = my_info)
    ELSE
-    ! write(0,*) 'pnetcdf create, rank = ',my_rank
+     IF ( DEBUG_IO ) write(0,*) 'pnetcdf create, rank = ',my_rank
     status = nf90_create(FILE_NAME, cmode, ncid, comm = my_comm, info = my_info)
 !    status = NF90_CREATE_PAR(filename(ibeg:iend),cmode,my_comm,my_info,ncid)
    ENDIF
@@ -1058,40 +1059,40 @@ program commas_netcdf
   dimvals(6) = ktile
   
 
-  IF ( .false. ) THEN
-  call check( nf90_def_var(ncid, 'XC', NF90_real, (/dim_id(1)/), nid) )
-    status = NF90_PUT_ATT(ncid, nid, "units",   'meters')
-    status = NF90_PUT_ATT(ncid, nid, "axis",   'X')
-    axisid(1) = nid
-  call check( nf90_def_var(ncid, 'YC', NF90_real, (/dim_id(3)/), nid) )
-    status = NF90_PUT_ATT(ncid, nid, "units",   'meters')
-    status = NF90_PUT_ATT(ncid, nid, "axis",   'Y')
-    axisid(2) = nid
-    
-  call check( nf90_def_var(ncid, 'ZC', NF90_real, (/dim_id(5)/), nid) )
-    status = NF90_PUT_ATT(ncid, nid, "units",   'meters')
-    status = NF90_PUT_ATT(ncid, nid, "axis",   'Z')
-    axisid(3) = nid
-
-  call check( nf90_def_var(ncid, 'XE', NF90_real, (/dim_id(2)/), nid) )
-    status = NF90_PUT_ATT(ncid, nid, "units",   'meters')
-    status = NF90_PUT_ATT(ncid, nid, "axis",   'X')
-    axisid(4) = nid
-  call check( nf90_def_var(ncid, 'YE', NF90_real, (/dim_id(4)/), nid) )
-    status = NF90_PUT_ATT(ncid, nid, "units",   'meters')
-    status = NF90_PUT_ATT(ncid, nid, "axis",   'Y')
-    axisid(5) = nid
-    
-  call check( nf90_def_var(ncid, 'ZE', NF90_real, (/dim_id(6)/), nid) )
-    status = NF90_PUT_ATT(ncid, nid, "units",   'meters')
-    status = NF90_PUT_ATT(ncid, nid, "axis",   'Z')
-    axisid(6) = nid
-
-  call check( nf90_def_var(ncid, 'TIME', NF90_real, (/ dim_id(0) /), nid) )
-    status = NF90_PUT_ATT(ncid, nid, "units",   'seconds')
-    axisid(7) = nid
-    
-  ENDIF
+!   IF ( .false. ) THEN
+!   call check( nf90_def_var(ncid, 'XC', NF90_real, (/dim_id(1)/), nid) )
+!     status = NF90_PUT_ATT(ncid, nid, "units",   'meters')
+!     status = NF90_PUT_ATT(ncid, nid, "axis",   'X')
+!     axisid(1) = nid
+!   call check( nf90_def_var(ncid, 'YC', NF90_real, (/dim_id(3)/), nid) )
+!     status = NF90_PUT_ATT(ncid, nid, "units",   'meters')
+!     status = NF90_PUT_ATT(ncid, nid, "axis",   'Y')
+!     axisid(2) = nid
+!     
+!   call check( nf90_def_var(ncid, 'ZC', NF90_real, (/dim_id(5)/), nid) )
+!     status = NF90_PUT_ATT(ncid, nid, "units",   'meters')
+!     status = NF90_PUT_ATT(ncid, nid, "axis",   'Z')
+!     axisid(3) = nid
+! 
+!   call check( nf90_def_var(ncid, 'XE', NF90_real, (/dim_id(2)/), nid) )
+!     status = NF90_PUT_ATT(ncid, nid, "units",   'meters')
+!     status = NF90_PUT_ATT(ncid, nid, "axis",   'X')
+!     axisid(4) = nid
+!   call check( nf90_def_var(ncid, 'YE', NF90_real, (/dim_id(4)/), nid) )
+!     status = NF90_PUT_ATT(ncid, nid, "units",   'meters')
+!     status = NF90_PUT_ATT(ncid, nid, "axis",   'Y')
+!     axisid(5) = nid
+!     
+!   call check( nf90_def_var(ncid, 'ZE', NF90_real, (/dim_id(6)/), nid) )
+!     status = NF90_PUT_ATT(ncid, nid, "units",   'meters')
+!     status = NF90_PUT_ATT(ncid, nid, "axis",   'Z')
+!     axisid(6) = nid
+! 
+!   call check( nf90_def_var(ncid, 'TIME', NF90_real, (/ dim_id(0) /), nid) )
+!     status = NF90_PUT_ATT(ncid, nid, "units",   'seconds')
+!     axisid(7) = nid
+!     
+!   ENDIF
 
   ! The dimids array is used to pass the IDs of the dimensions of
   ! the variables. Note that in fortran arrays are stored in

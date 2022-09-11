@@ -7,8 +7,6 @@ This example expects the netcdf libraries to be built with pnetcdf support, but 
 
 The namelist mainly controls the number of processors (nprocx, nprocy) and whether to use the HDF5 interface (parallelio_type = 1) or the pnetcdf interface (parallelio_type = 2 )
 
-regfile = 'registry' file, which has a list of variables (0D, 1D, 2D, 3D) with attributes (time dependence and other)
-
 &params
   nx = 40,
   ny = 40,
@@ -18,6 +16,8 @@ regfile = 'registry' file, which has a list of variables (0D, 1D, 2D, 3D) with a
   regfile = 'registry.take'
   parallelio_type = 1
 /
+
+regfile = 'registry' file, which has a list of variables (0D, 1D, 2D, 3D) with attributes (time dependence and other)
 
 
 
